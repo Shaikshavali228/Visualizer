@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Visualizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Execution Visualizer</h1>
+        
+        <select id="language">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+        </select>
+
+        <textarea id="code" placeholder="Write your code here..."></textarea>
+        
+        <button id="run">Run</button>
+        
+        <div id="output-container">
+            <h2>Output:</h2>
+            <pre id="output"></pre>
+        </div>
+
+        <div id="visualizer">
+            <h2>Step-by-Step Execution</h2>
+            <pre id="execution"></pre>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
